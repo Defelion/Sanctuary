@@ -58,7 +58,7 @@ nav .BurgerMenu span {
     border-radius: 0.2rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
     nav .BurgerMenu {
         display: flex;
     }

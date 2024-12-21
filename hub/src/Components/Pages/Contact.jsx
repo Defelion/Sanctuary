@@ -1,11 +1,10 @@
 import {Component} from "react";
-import {NavBar} from "./Navbar/NavBar";
 
-export class HeaderClass extends Component {
+export class Contact extends Component {
     render() {
         return (
             <>
-                <NavBar />
+                <h1>Contact</h1>
             </>
         )
     }

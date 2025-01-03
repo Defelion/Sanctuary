@@ -1,5 +1,6 @@
 package dk.hbp.def.hub.commondata.data;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,10 +9,10 @@ public class User {
     private String name;
     private String password;
     private Person person;
-    private Map<MenuItem, String> Roles;
+    private ArrayList<Role> Roles;
 
-    public User() { Roles = new HashMap<MenuItem, String>(); }
-    public User(int id, String name, String password, Person person, Map<MenuItem, String> Roles) {
+    public User() { Roles = new ArrayList<>(); }
+    public User(int id, String name, String password, Person person, ArrayList<Role> Roles) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -27,8 +28,8 @@ public class User {
     public void setPassword(String password) { this.password = password; }
     public Person getPerson() { return person; }
     public void setPerson(Person person) { this.person = person; }
-    public Map<MenuItem, String> getRoles() { return Roles; }
-    public void setRoles(Map<MenuItem, String> roles) { Roles = roles; }
-    public void addRole(MenuItem menuItem, String role) { Roles.put(menuItem, role); }
-    public void removeRole(MenuItem menuItem) { Roles.remove(menuItem); }
+    public ArrayList<Role> getRoles() { return Roles; }
+    public void setRoles(ArrayList<Role> roles) { Roles = roles; }
+    public void addRole(Role role) { Roles.add(role); }
+    public void removeRole(Role role) { Roles.remove(role); }
 }

@@ -20,6 +20,8 @@ public interface userSelect {
     public Address[] getAddresses();
     public Address[] getAddressesByPerson(Person person);
     public Address[] getAddressesByCity(City city);
+    public City getCity(City city);
+    public City[] getCities();
     public Phone[] getPhones();
     public Phone[] getPhonesByPerson(Person person);
     public Email[] getEmails();
